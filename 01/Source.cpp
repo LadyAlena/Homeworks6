@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include "Calculator.h"
 
 int main(int argc, char* argv) {
@@ -20,19 +20,19 @@ int main(int argc, char* argv) {
 
 	switch (option) {
 	case 1:
-		std::cout << a << " + " << b << " = " << Sum(a, b) << std::endl;
+		Sum(a, b);
 		break;
 	case 2:
-		std::cout << a << " - " << b << " = " << Subtract(a, b) << std::endl;
+		Subtract(a, b);
 		break;
 	case 3:
-		std::cout << a << " * " << b << " = " << Multiply(a, b) << std::endl;
+		Multiply(a, b);
 		break;
 	case 4:
-		std::cout << a << " / " << b << " = " << Divide(a, b) << std::endl;
+		Divide(a, b);
 		break;
 	case 5:
-		std::cout << a << " в степени " << b << " = " << power_2(a, b) << std::endl;
+		power_2(a, b);
 		break;
 	default:
 		std::cout << "Такой опции не существует..." << std::endl;
