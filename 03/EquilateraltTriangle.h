@@ -1,4 +1,5 @@
 ﻿#pragma once
+#include "Triangle.h"
 
 class EquilateraltTriangle : public Triangle
 {

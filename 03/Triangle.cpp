@@ -1,4 +1,5 @@
-﻿#include "Figure.h"
+﻿#include <iostream>
+#include <string>
 #include "Triangle.h"
 
 Triangle::Triangle(int a, int b, int c, int A, int B, int C)

@@ -1,5 +1,4 @@
-﻿#include "Figure.h"
-#include "Triangle.h"
+﻿#include <string>
 #include "EquilateraltTriangle.h"
 
 

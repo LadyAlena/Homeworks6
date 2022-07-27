@@ -1,6 +1,5 @@
 ﻿#include <iostream>
 #include <string>
-#include "Figure.h"
 #include "Quadrilateral.h"
 
 Quadrilateral::Quadrilateral(int a, int b, int c, int d, int A, int B, int C, int D) {
