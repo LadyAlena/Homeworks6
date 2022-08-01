@@ -1,34 +1,33 @@
 #include "Calculator.h"
 #include <iostream>
 
-void Sum(double a, double b) {
-	std::cout << a << " + " << b << " = " << a + b << std::endl;
+double Sum(double a, double b) {
+	return a + b;
 }
 
-void Subtract(double a, double b) {
-	std::cout << a << " - " << b << " = " << a - b << std::endl;
+double Subtract(double a, double b) {
+	return a - b;
 };
 
-void Multiply(double a, double b) {
-	std::cout << a << " * " << b << " = " << a*b << std::endl;
+double Multiply(double a, double b) {
+	return a * b;
 };
 
-void Divide(double a, double b) {
+double Divide(double a, double b) {
 
 	if (!b) {
-		std::cout << "Ошибка деления на ноль" << std::endl;
+		throw std::exception("Ошибка деления на ноль");
 	}
-	else {
-		std::cout << a << " / " << b << " = " << a/b << std::endl;;
-	}
+
+	return a / b;
 };
 
-void power_2(double a, double b) {
+double power_2(double a, double b) {
 	int result = 1;
 
 	for (int i = 0; i < b; ++i) {
 		result *= a;
 	}
 
-	std::cout << a << " в степени " << b << " = " << result << std::endl;
+	return result;
 };
