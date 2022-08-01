@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include "Figure.h"
 #include "GetInfoAboutFigure.h"
 
 void GetInfoAboutFigure(Figure* figure)
