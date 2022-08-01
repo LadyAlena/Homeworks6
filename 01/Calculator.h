@@ -1,7 +1,7 @@
 #pragma once
 
-void Sum(double a, double b);
-void Subtract(double a, double b);
-void Multiply(double a, double b);
-void Divide(double a, double b);
-void power_2(double a, double b);
+double Sum(double a, double b);
+double Subtract(double a, double b);
+double Multiply(double a, double b);
+double Divide(double a, double b);
+double power_2(double a, double b);
