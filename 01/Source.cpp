@@ -20,19 +20,27 @@ int main(int argc, char* argv) {
 
 	switch (option) {
 	case 1:
-		Sum(a, b);
+		std::cout << a << " + " << b << " = " << Sum(a, b) << std::endl;
 		break;
 	case 2:
-		Subtract(a, b);
+		std::cout << a << " - " << b << " = " << Subtract(a, b) << std::endl;
 		break;
 	case 3:
-		Multiply(a, b);
+		std::cout << a << " * " << b << " = " << Multiply(a, b) << std::endl;
 		break;
 	case 4:
-		Divide(a, b);
+
+		try {
+			std::cout << a << " / " << b << " = " << Divide(a, b) << std::endl;
+			
+		}
+		catch(std::exception ex) {
+			std::cout << ex.what() << std::endl;
+		}
+
 		break;
 	case 5:
-		power_2(a, b);
+		std::cout << a << " в степени " << b << " = " << power_2(a, b) << std::endl;
 		break;
 	default:
 		std::cout << "Такой опции не существует..." << std::endl;
