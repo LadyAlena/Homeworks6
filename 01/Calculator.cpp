@@ -1,5 +1,5 @@
 #include "Calculator.h"
-#include <iostream>
+#include <stdexcept>
 
 double Sum(double a, double b) {
 	return a + b;
@@ -16,7 +16,7 @@ double Multiply(double a, double b) {
 double Divide(double a, double b) {
 
 	if (!b) {
-		throw std::exception("Ошибка деления на ноль");
+		throw std::logic_error("Ошибка деления на ноль");
 	}
 
 	return a / b;
