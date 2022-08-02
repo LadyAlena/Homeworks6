@@ -34,7 +34,7 @@ int main(int argc, char* argv) {
 			std::cout << a << " / " << b << " = " << Divide(a, b) << std::endl;
 			
 		}
-		catch(std::exception ex) {
+		catch(std::logic_error ex) {
 			std::cout << ex.what() << std::endl;
 		}
 
